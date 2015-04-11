@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="PostgreSQL - conor_development@localhost" uuid="e3d2a79c-c439-46f0-89b1-f0057696551a">
+      <secret-storage>master_key</secret-storage>
+      <user-name>root</user-name>
+      <schema-pattern>conor_development.pg_catalog conor_development.public</schema-pattern>
+      <default-schemas>conor_development.pg_catalog conor_development.public</default-schemas>
+    </data-source>
+  </component>
+</project>
