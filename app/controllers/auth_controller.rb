@@ -6,7 +6,7 @@ class AuthController < ApplicationController
         head 403
       end
     else
-       redirect_to auth_unauthorized_path, format: :json
+       redirect_to auth_unauthorized_path(format: :json)
     end
   end
 
