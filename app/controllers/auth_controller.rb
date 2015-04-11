@@ -5,6 +5,8 @@ class AuthController < ApplicationController
       unless @user.authenticate params[:password]
         head 403
       end
+    else
+       render nothing: true, status: 200
     end
   end
 end
