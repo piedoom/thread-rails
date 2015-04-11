@@ -1,3 +1,2 @@
-if @user
-  json.partial! 'user/user', user: @user
-end
+
+json.partial! 'user/user', user: @user
