@@ -6,7 +6,11 @@ class AuthController < ApplicationController
         head 403
       end
     else
-       render nothing: true, status: 200
+       redirect_to unauthorized
     end
   end
+
+  def unauthorized
+  end
+
 end
