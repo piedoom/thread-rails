@@ -6,7 +6,7 @@ class AuthController < ApplicationController
         head 403
       end
     else
-       redirect_to unauthorized_path
+       redirect_to action: unauthorized
     end
   end
 
