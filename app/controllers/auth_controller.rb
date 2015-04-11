@@ -11,7 +11,6 @@ class AuthController < ApplicationController
   end
 
   def unauthorized
-
   end
 
 end
