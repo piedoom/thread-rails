@@ -6,7 +6,7 @@ class AuthController < ApplicationController
         head 403
       end
     else
-       render "unauthorized"
+       render unauthorized
     end
   end
 
