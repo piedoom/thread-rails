@@ -1,5 +1,5 @@
 json.description article.description
-json.partial! genders
-json.partial! sizes
-json.partial! photos
+json.partial! article.genders
+json.partial! article.sizes
+json.partial! article.photos
 
