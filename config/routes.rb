@@ -56,4 +56,7 @@ Rails.application.routes.draw do
   post 'authenticate' => 'auth#authenticate'
   get 'auth/unauthorized'
   get 'user/me' => 'user#me'
+
+  get 'articles' => 'article#index'
+  get 'articles/:id' => 'article#show'
 end

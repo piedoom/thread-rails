@@ -1,0 +1,1 @@
+json.array! sizes, partial: 'article/size', as: :size
