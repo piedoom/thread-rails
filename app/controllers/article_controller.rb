@@ -1,5 +1,9 @@
 class ArticleController < ApplicationController
   def show
-    @user = User.find(params[:id])
+    @article = Article.find(params[:id])
+  end
+
+  def index
+    @article = Article.all
   end
 end
