@@ -1,1 +1,1 @@
-json.array! articles, partial: 'article/article', as: :article
+json.array! article, partial: 'article/article', as: :article
