@@ -1,1 +1,1 @@
-json.array! genders, partial: 'article/gender', as: :gender
+json.array! articles.genders, partial: 'article/gender', as: :gender
