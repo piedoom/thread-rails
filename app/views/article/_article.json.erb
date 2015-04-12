@@ -1,0 +1,36 @@
+{
+  "id":<%= article.id %>,
+  "user_id":<%= article.user_id %>,
+  "description":"<%= article.description %>",
+
+  "photos":[
+    <% article.photos.each do |photo| %>
+    {
+      "photo_id":<%= photo.id %>,
+      "photo_original_url":"<%= "http://192.168.1.115:3000#{photo.picture.url}" %>",
+      "photo_small_url":"<%= "http://192.168.1.115:3000#{photo.picture.url(:small)}" %>",
+      "photo_large_url":"<%= "http://192.168.1.115:3000#{photo.picture.url(:large)}" %>"
+
+    } <% if article.photos.last != photo %>
+  ,
+    <% end %>
+
+    <% end %>
+  ],
+
+  "sizes":[
+    <% article.sizes.each do |size| %>
+    "<%= size.size %>"<% if article.sizes.last != size %>,
+    <% end %>
+    <% end %>
+
+  ],
+
+  "genders":[
+    <% article.genders.each do |gender| %>
+    "<%= gender.gender %>"<% if article.genders.last != gender %>,
+    <% end %>
+    <% end %>
+
+  ]
+}

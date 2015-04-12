@@ -1,0 +1,10 @@
+{
+  "articles":[
+  <% Article.all.each do |article| %>
+    <%= render partial: 'article', :locals => {:article => article} %>
+    <% if Article.last != article %>
+,
+    <% end %>
+  <% end %>
+    ]
+}

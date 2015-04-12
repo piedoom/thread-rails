@@ -54,6 +54,8 @@ Rails.application.routes.draw do
   #     resources :products
   #   end
   post 'authenticate' => 'auth#authenticate'
+  post 'create' => 'article#create'
+
   get 'auth/unauthorized'
   get 'user/me' => 'user#me'
 

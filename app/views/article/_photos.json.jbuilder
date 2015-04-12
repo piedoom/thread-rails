@@ -1,1 +1,0 @@
-json.array! photos, partial: 'article/photo', as: :photo

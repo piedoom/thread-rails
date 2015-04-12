@@ -1,1 +1,0 @@
-json.array! article, partial: 'article/article', as: :article
